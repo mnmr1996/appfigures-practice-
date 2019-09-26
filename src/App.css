@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+ 
+*{
+  background: black;
+  color: white;
+  
+}
+
+h1{
+  color: blue
+}
+
+h2{
+  color: red;
+  background-color: white
+}
+
+.App-link {
+  color: #09d3ac;
+}
