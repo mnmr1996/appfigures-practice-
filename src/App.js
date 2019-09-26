@@ -34,7 +34,7 @@ class App extends Component {
   // loads all the data from the API
   //I took out the url name because of making it public on github but in the fetch is where it would be placed
   componentDidMount() {
-    fetch("")
+    fetch("https://appfigures.com/_u/jobs/twitter-reviews")
       .then(res => res.json())
       .then(json => {
         this.setState({
@@ -404,11 +404,6 @@ class App extends Component {
       }
       //shows the total after the filtering is done
       let total = userReviewsFilter.length;
-
-      //after finding the search results limit the amount that it can show
-      let userReviewsLimitFilter = userReviewsFilter.filter(
-        (x, index) => index < this.state.limit
-      );
 
       return (
         <div className="App">
