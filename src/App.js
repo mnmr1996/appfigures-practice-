@@ -322,7 +322,6 @@ class App extends Component {
 
       let thisMonth = notThisWeekOrLast.filter(function(review) {
         let tempDate = review.date.split("-", 3);
-        let lastSplit = tempDate[2].split("T");
         if (tempDate[0] == todayYear && tempDate[1] == todayMonth) {
           return true;
         } else return false;
@@ -330,7 +329,6 @@ class App extends Component {
 
       let lastMonth = notThisWeekOrLast.filter(function(review) {
         let tempDate = review.date.split("-", 3);
-        let lastSplit = tempDate[2].split("T");
         if (todayMonth != 1) {
           if (tempDate[0] == todayYear && tempDate[1] == todayMonth - 1) {
             return true;
